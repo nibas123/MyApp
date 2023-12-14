@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nest Digital</title>
+</head>
+
+<body>
+
+
+  <h1 class="display-3">Welcome to my project</h1>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let item of districts; let i = index" class="col-md-4">
+        <div class="card mb-4" style="width: 18rem;">
+          <img src="{{ item.image }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.desc }}</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
